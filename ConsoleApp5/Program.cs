@@ -8,9 +8,8 @@ namespace ConsoleApp5
         {
             int[] firstArray = { 1, 3, 5, 67, 8, 56, 5, 5, 4, 3, 4, 5, 6, 3, 12, 6, 7, 54 };
             ArrayHandling.Print(firstArray);
-            Console.ReadKey();
+            Console.WriteLine();
             var secondArray = ArrayHandling.RemoveDuplicates(firstArray);
-            Console.Clear();
             ArrayHandling.Print(secondArray);
         }
     }
@@ -47,7 +46,7 @@ namespace ConsoleApp5
         public static void Print(int[] enteringArray)
         {
             foreach (int number in enteringArray)
-                Console.WriteLine(number);
+                Console.Write($"{number} ");
         }
     }
 }
